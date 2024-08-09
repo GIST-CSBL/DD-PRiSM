@@ -4,12 +4,21 @@
 # DD-PRiSM
 Readme file for the source code of DD-PRiSM: A Deep Learning Framework for Decomposition and Prediction of Synergistic Drug Combinations
 
+# Packaged dependency
+Matplotlib >= 3.8.0
+NumPy >= 1.26.4
+Pandas >= 2.2.1
+SciPy >= 1.11.4
+scikit-learn >= 1.4.1
+pyTorch >= 2.2.0
 
+
+# File list
 There are seven iPython notebook files
 
 - Three util-related notebooks
   - 00_Utils.ipynb: A notebook file that includes the basic functions used on the Monotherapy model and the Combination model.
- 
+ z
     123123
 
   - 00_MonotherapyUtils.ipynb: A notebook file that includes the Monotherapy model and functions related to the Monotherapy model.
