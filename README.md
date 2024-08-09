@@ -29,7 +29,23 @@ There are seven iPython notebook files
 - Three util-related notebooks
   - 00_Utils.ipynb: Basic functions used on the Monotherapy model and the Combination model.
 
-    -
+    - MinMaxNormalization: Just simple minmax normalization
+   
+    - estimate_density: Density estimation with arbitrary precision (here, the precision was set as 2, which means the value will be rounded to the nearest hundredths)
+   
+    - get_weight: Calculate the density-based weight for the density-weighted loss function.
+   
+    - PCC: Pearson correlation coefficient on two torch tensors
+   
+    - MSE: Mean squared error on two torch tensors
+      
+    - RMSE: Root
+   
+
+
+
+
+
 
   - 00_MonotherapyUtils.ipynb: The Monotherapy model and functions related to the Monotherapy model.
  
