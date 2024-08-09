@@ -20,6 +20,8 @@ pyTorch >= 2.2.0
 
 tqdm >= 4.66.2
 
+seaborn >= 0.13.2
+
 
 # File list
 There are seven iPython notebook files
@@ -43,16 +45,16 @@ There are seven iPython notebook files
     -
     
 - A Monotherapy model notebook
-  - 02_MonotherapyModel_Pretraining.ipynb:
+  - 02_MonotherapyModel_Pretraining.ipynb: The pretraining of the Monotherapy model on NCI60 dataset.
 
     -
     
-  - 03_MonotherapyModel_Finetuning.ipynb:
+  - 03_MonotherapyModel_Finetuning.ipynb: The finetuning of the Monotherapy model on NCI-ALMANAC monotherapy dataset, that was already trained on NCI60 dataset.
  
     -
     
 - A Combination therapy model notebook
-  - 04_CombinationTherapyModel_Training.ipynb:
+  - 04_CombinationTherapyModel_Training.ipynb: The training of the combination therapy model on NCI-ALMANAC combination therapy dataset.
  
     -
 
