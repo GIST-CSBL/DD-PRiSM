@@ -6,10 +6,15 @@ Readme file for the source code of DD-PRiSM: A Deep Learning Framework for Decom
 
 # Packaged dependency
 Matplotlib >= 3.8.0
+
 NumPy >= 1.26.4
+
 Pandas >= 2.2.1
+
 SciPy >= 1.11.4
+
 scikit-learn >= 1.4.1
+
 pyTorch >= 2.2.0
 
 
