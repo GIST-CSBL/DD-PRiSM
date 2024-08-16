@@ -5,7 +5,7 @@
 Readme file for the source code of DD-PRiSM: A Deep Learning Framework for Decomposition and Prediction of Synergistic Drug Combinations
 
 
-# Packaged dependency
+# Package dependency
 Matplotlib >= 3.8.0
 
 NumPy >= 1.26.4
