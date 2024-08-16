@@ -29,7 +29,7 @@ There are seven iPython notebook files
 - Three util-related notebooks
   - 00_Utils.ipynb: Basic functions used on the Monotherapy model and the Combination model.
 
-    - MinMaxNormalization: Just simple minmax normalization
+    - MinMaxNormalization: Simple minmax normalization
    
     - estimate_density: Density estimation with arbitrary precision (here, the precision was set as 2, which means the value will be rounded to the nearest hundredths)
    
@@ -39,7 +39,7 @@ There are seven iPython notebook files
    
     - MSE: Mean squared error on two torch tensors
       
-    - RMSE: Root
+    - RMSE: Root Mean squared error on two torch tensors
    
 
 
