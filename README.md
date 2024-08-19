@@ -56,6 +56,7 @@ There are seven iPython notebook files
     - get_intermediate_output: Get the value of the intermediate layer using Hook class
 
 
+
   - 00_MonotherapyUtils.ipynb: The Monotherapy model and functions related to the Monotherapy model.
  
     - MonotherapyDataset (Class): The dataset class for the monotherapy treatment data (for the training of the Monotherapy model)
@@ -72,8 +73,10 @@ There are seven iPython notebook files
    
     - test_mono: Test the Monotherapy model with the monotherapy dataset (return the loss and performance metrics)
    
-    - predict_mono: predict the viability of samples in the dataset with a trained Monotherapy model (return the real viabilities and the predicted viabilities)
-      
+    - predict_mono: predict the viability of samples in the dataset with a trained Monotherapy model (return the real viabilities and the predicted liabilities)
+
+
+
   - 00_CombinationtherapyUtils.ipynb: The Combination therapy model and functions related to the Combination therapy model.
  
     -　CombinationDataset (Class): The dataset class for the combination therapy treatment data (for the training of the Combination therapy model)
@@ -90,14 +93,20 @@ There are seven iPython notebook files
    
     - test_comb: Test the Combination therapy model with the combination therapy dataset (return the loss and performance metrics)
    
-    - predict_comb: predict the viability of samples in the dataset with a trained Combination therapy model (return the real viabilities and the predicted viabilities)
+    - predict_comb: predict the viability of samples in the dataset with a trained Combination therapy model (return the real viabilities and the predicted liabilities)
+
+
 
 - A Dataset-related notebook
   - 01_Preprocessing.ipynb: Links to obtain the dataset used in this study, and preprocessing steps.
 
-    -
-    
-- A Monotherapy model notebook
+    - Download data used in DD-PRiSM (Datasets for the training and the validation, Features, etc.)
+
+    - All needed data will be downloaded by following the notebook step-by-step
+
+
+   
+- Main notebooks related to training and validation of models 
   - 02_MonotherapyModel_Pretraining.ipynb: The pretraining of the Monotherapy model on NCI60 dataset.
 
     -
