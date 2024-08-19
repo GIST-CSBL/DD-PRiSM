@@ -6,6 +6,8 @@ Readme file for the source code of DD-PRiSM: A Deep Learning Framework for Decom
 
 
 # Package dependency
+(The specified version of the listed packages is the version of each package that DD-PRiSM was developed, but the disagreement of version may not affect the function of the model for most packages, as we used the fundamental built-in function for most cases)
+
 Matplotlib >= 3.8.0
 
 NumPy >= 1.26.4
