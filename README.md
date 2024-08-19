@@ -1,4 +1,4 @@
-(# This readme file is crrenlt in editing)
+(# This readme file is currently in editing)
 
 
 # DD-PRiSM
