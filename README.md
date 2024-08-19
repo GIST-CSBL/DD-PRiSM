@@ -109,14 +109,30 @@ There are seven iPython notebook files
 - Main notebooks related to training and validation of models 
   - 02_MonotherapyModel_Pretraining.ipynb: The pretraining of the Monotherapy model on NCI60 dataset.
 
-    -
+    - Pretrain the Monotherapy model on the NCI60 dataset downloaded in 01_Preprocessing.ipynb
+   
+    - The performance of the model on the test set can be evaluated with the last cell of the notebook
+    
+    - Change the linkage variable 'test_dataloader' to another dataloaders (cellline_dataloader/drug_dataloader/both_dataloader)
+
     
   - 03_MonotherapyModel_Finetuning.ipynb: The finetuning of the Monotherapy model on monotherapy data points of the NCI-ALMANAC dataset, which was already trained on the NCI60 dataset.
  
-    -
+    - Fine-tune the pretrained Monotherapy model on monotherapy data points of NCI-ALMANAC dataset downloaded in 01_Preprocessing.ipynb
+   
+    - The performance of the model on the test set can be evaluated with the last cell of the notebook
+    
+    - Change the linkage variable 'test_dataloader' to another dataloaders (cellline_dataloader/drug_dataloader/both_dataloader)
+
+
     
 - A Combination therapy model notebook
   - 04_CombinationTherapyModel_Training.ipynb: The training of the Combination therapy model on combination therapy data points of the NCI-ALMANAC dataset.
- 
-    -
 
+    - Predict the monotherapy value and extract pathway attentions of all monotherapies
+    
+    - Train the Combination therapy model on combination therapy data points of the NCI-ALMANAC dataset downloaded in 01_Preprocessing.ipynb
+   
+    - The performance of the model on the test set can be evaluated with the last cell of the notebook
+    
+    - Change the linkage variable 'test_dataloader' to another dataloaders (cellline_dataloader/drug1_dataloader/drug2_dataloader/both_dataloader)
