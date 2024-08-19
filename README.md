@@ -59,6 +59,8 @@ There are seven iPython notebook files
     - MonotherapyDataset (Class): The dataset class for the monotherapy treatment data (for the training of the Monotherapy model)
    
       - The function __getitem__ gives a datapoint in (features, viability) form
+      
+      - Features consist of the cell line feature (pathway-grouped gene expressions), the drug feature (512-bits Morgan fingerprint), and the concentration value (a scalar value)
    
     - MonotherapyDataset2device: Load a device (GPU) with sample data (features and the viability)
    
@@ -72,7 +74,21 @@ There are seven iPython notebook files
       
   - 00_CombinationtherapyUtils.ipynb: The Combination therapy model and functions related to the Combination therapy model.
  
-    -
+    -　CombinationDataset (Class): The dataset class for the combination therapy treatment data (for the training of the Combination therapy model)
+
+      - The function __getitem__ gives a datapoint in (features, viability) form
+   
+      - Features consist of the pathway attentions (pathway attention of monotherapy1, pathway attention of monotherapy2) and the viability of monotherapies (monotherapy1 viability, monotherapy2 viability)
+   
+    - CombinationDataset2device: Load a device (GPU) with sample data (features and the viability)
+   
+    - CombinationTherapyModel (Class): The Combination therapy model that takes features (=Pathway attention from two monotherapies+Predicted viability from two monotherapies) and predicts the combination therapy's cell viability
+   
+    - train_comb: Train the Combination therapy model with the combination therapy dataset
+   
+    - test_comb: Test the Combination therapy model with the combination therapy dataset (return the loss and performance metrics)
+   
+    - predict_comb: predict the viability of samples in the dataset with a trained Combination therapy model (return the real viabilities and the predicted viabilities)
 
 - A Dataset-related notebook
   - 01_Preprocessing.ipynb: Links to obtain the dataset used in this study, and preprocessing steps.
