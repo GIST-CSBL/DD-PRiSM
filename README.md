@@ -26,10 +26,10 @@ seaborn >= 0.13.2
 # File list
 There are seven iPython notebook files
 
-- Three util-related notebooks
+- Three util-related notebooks used in main notebook files
   - 00_Utils.ipynb: Basic functions used on the Monotherapy model and the Combination model.
 
-    - MinMaxNormalization: Simple minmax normalization
+    - MinMaxNormalization: Simple min-max normalization
    
     - estimate_density: Density estimation with arbitrary precision (here, the precision was set as 2, which means the value will be rounded to the nearest hundredths)
    
@@ -41,10 +41,17 @@ There are seven iPython notebook files
       
     - RMSE: Root Mean squared error on two torch tensors
    
-
-
-
-
+    - WeightedMSE: The MSE corrected by the sample density (dMSE in our paper)
+   
+    - CustomLoss (Class): The class for the loss function used in our study (sample density weighting MSE with correlation)
+   
+    - batch_dot: Batch-level dot product of vectors (manually defined as the built-in batch dot was too slow)
+   
+    - get_tensor_value: Get the value of a pyTorch tensor
+   
+    - Hook: The class that extracts the output value of the intermediate layer of the model
+   
+    - get_intermediate_output: Get the value of the intermediate layer using Hook class
 
 
   - 00_MonotherapyUtils.ipynb: The Monotherapy model and functions related to the Monotherapy model.
