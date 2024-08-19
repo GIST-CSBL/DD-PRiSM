@@ -56,8 +56,20 @@ There are seven iPython notebook files
 
   - 00_MonotherapyUtils.ipynb: The Monotherapy model and functions related to the Monotherapy model.
  
-    -
-
+    - MonotherapyDataset (Class): The dataset class for the monotherapy treatment data (for the training of the Monotherapy model)
+   
+      - The function __getitem__ gives a datapoint in (features, viability) form
+   
+    - MonotherapyDataset2device: Load a device (GPU) with sample data (features and the viability)
+   
+    - MonotherapyModel (Class): The Monotherapy model that takes features (=Cell line feature+Drug feature+Dosage information) and predicts the cell viability
+   
+    - train_mono: Train the Monotherapy model with the monotherapy dataset
+   
+    - test_mono: Test the Monotherapy model with the monotherapy dataset (return the loss and performance metrics)
+   
+    - predict_mono: predict the viability of samples in the dataset with a trained Monotherapy model (return the real viabilities and the predicted viabilities)
+      
   - 00_CombinationtherapyUtils.ipynb: The Combination therapy model and functions related to the Combination therapy model.
  
     -
