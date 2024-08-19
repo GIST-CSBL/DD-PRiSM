@@ -29,7 +29,7 @@ seaborn >= 0.13.2
 There are seven iPython notebook files
 
 - Three util-related notebooks used in main notebook files
-  - 00_Utils.ipynb: Basic functions used on the Monotherapy model and the Combination model.
+  - 00_Utils.ipynb: Basic functions used on the Monotherapy model and the Combination therapy model.
 
     - MinMaxNormalization: Simple min-max normalization
    
@@ -102,12 +102,12 @@ There are seven iPython notebook files
 
     -
     
-  - 03_MonotherapyModel_Finetuning.ipynb: The finetuning of the Monotherapy model on NCI-ALMANAC monotherapy dataset, that was already trained on NCI60 dataset.
+  - 03_MonotherapyModel_Finetuning.ipynb: The finetuning of the Monotherapy model on monotherapy data points of the NCI-ALMANAC dataset, which was already trained on the NCI60 dataset.
  
     -
     
 - A Combination therapy model notebook
-  - 04_CombinationTherapyModel_Training.ipynb: The training of the combination therapy model on NCI-ALMANAC combination therapy dataset.
+  - 04_CombinationTherapyModel_Training.ipynb: The training of the Combination therapy model on combination therapy data points of the NCI-ALMANAC dataset.
  
     -
 
