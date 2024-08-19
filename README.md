@@ -1,6 +1,3 @@
-(# This readme file is currently in editing)
-
-
 # DD-PRiSM
 Readme file for the source code of DD-PRiSM: A Deep Learning Framework for Decomposition and Prediction of Synergistic Drug Combinations
 
