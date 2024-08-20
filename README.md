@@ -133,3 +133,16 @@ There are seven iPython notebook files
     - The performance of the model on the test set can be evaluated with the last cell of the notebook
     
     - Change the linkage variable 'test_dataloader' to another dataloaders (cellline_dataloader/drug1_dataloader/drug2_dataloader/both_dataloader)
+
+
+# How to execute
+Follow the iPython notebooks step-by-step
+01_Preprocessing.ipynb
+↓
+02_MonotherapyModel_Pretraining.ipynb
+↓
+03_MonotherapyModel_Finetuning.ipynb
+↓
+04_CombinationTherapyModel_Training.ipynb
+
+Please change a value of the variable 'base_directory' to the directory that you want to save the intermediate files
