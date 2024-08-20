@@ -137,12 +137,20 @@ There are seven iPython notebook files
 
 # How to execute
 Follow the iPython notebooks step-by-step
+
 01_Preprocessing.ipynb
+
 ↓
+
 02_MonotherapyModel_Pretraining.ipynb
+
 ↓
+
 03_MonotherapyModel_Finetuning.ipynb
+
 ↓
+
 04_CombinationTherapyModel_Training.ipynb
+
 
 Please change a value of the variable 'base_directory' to the directory that you want to save the intermediate files
